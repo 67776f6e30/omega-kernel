@@ -32,7 +32,7 @@ extern char* gl_hot_key2;
 
 extern char* gl_language;
 extern char* gl_en_lang;
-extern char* gl_zh_lang;
+extern char* gl_kr_lang;
 
 extern char* gl_set_btn;
 extern char* gl_ok_btn;
@@ -78,7 +78,7 @@ extern char**  	gl_rom_menu;
 extern char**   gl_nor_op;
 
 void LoadEnglish(void);
-void LoadChinese(void);
+void LoadKorean(void);
 
 #endif
 

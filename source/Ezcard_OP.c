@@ -474,9 +474,9 @@ void IWRAM_CODE Check_FW_update(u16 Current_FW_ver,u16 Built_in_ver)
 	sprintf(msg,"press [A] to update");
 	DrawHZText12(msg,0,2,offset_Y+4*line_x, 0x7FFF,1);	
 	sprintf(msg,"press [B] to cancel");
-	DrawHZText12(msg,0,2,offset_Y+5*line_x, 0x7FFF,1);	
-	
-	while(1)
+	DrawHZText12(msg,0,2,offset_Y+5*line_x, 0x7FFF,1);
+
+    while(1)
 	{
 		VBlankIntrWait();	
 		
@@ -495,8 +495,8 @@ void IWRAM_CODE Check_FW_update(u16 Current_FW_ver,u16 Built_in_ver)
 			{
 					
 				sprintf(msg," %lu%%",(offset*100/newomega_top_bin_size+1));
-				Clear(54, offset_Y+6*line_x,120,15,RGB(0,18,24),1);	
-				DrawHZText12(msg,0,54,offset_Y+6*line_x, 0x7FFF,1);	
+				Clear(65, offset_Y+6*line_x,120,15,RGB(0,18,24),1);
+				DrawHZText12(msg,0,65,offset_Y+6*line_x, 0x7FFF,1);
 				
 				FAT_table_buffer[0] = (0x40000 + offset);
 				

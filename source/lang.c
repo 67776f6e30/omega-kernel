@@ -31,7 +31,7 @@ char* gl_hot_key2;
 
 char* gl_language;
 char* gl_en_lang;
-char* gl_zh_lang;
+char* gl_kr_lang;
 char* gl_set_btn;
 char* gl_ok_btn;
 
@@ -78,96 +78,8 @@ char**  gl_rom_menu;
 char**  gl_nor_op;
 
 
-//中文
-const char zh_init_error[]="TF卡初始化失败";
-const char zh_power_off[]="关机";
-const char zh_init_ok[]="TF卡初始化成功";
-const char zh_Loading[]="加载中...";
-const char zh_file_overflow[]="文件太大,不能加载";
 
-const char zh_menu_btn[]=" [B]取消    [A]确定";
-const char zh_writing[]="正在写...";
-const char zh_lastest_game[]="请选择最后一个游戏";
-
-const char zh_time[] ="     时间";
-const char zh_Mon[]="一";
-const char zh_Tues[]="二";
-const char zh_Wed[]="三";
-const char zh_Thur[]="四";
-const char zh_Fri[]="五";
-const char zh_Sat[]="六";
-const char zh_Sun[]="日";
-
-const char zh_addon[]="     功能";
-const char zh_reset[]="软复位";
-const char zh_rts[]="即时存档";
-const char zh_sleep[]="睡眠";
-const char zh_cheat[]="金手指";
-
-const char zh_hot_key[]=" 睡眠热键";
-const char zh_hot_key2[]=" 菜单热键";
-
-const char zh_language[]=" LANGUAGE";
-const char zh_lang[]=" 中文";
-
-const char zh_set_btn[]="设置";
-const char zh_ok_btn[]="保存";
-const char zh_formatnor_info[]="确定?大约4分钟";
-
-const char zh_check_sav[]="检查SAV文件";
-const char zh_make_sav[]="创建SAV文件";
-
-const char zh_check_RTS[]="检查RTS文件";
-const char zh_make_RTS[]="创建RTS文件";
-
-const char zh_check_pat[]="检查PAT文件";
-const char zh_make_pat[]="创建PAT文件";
-
-const char zh_loading_game[]="加载游戏";
-
-const char zh_engine[]="     引擎";
-const char zh_use_engine[]="快速补丁引擎";
-
-const char zh_recently_play[]="最近游戏列表";
-
-const char zh_START_help[]="打开最近游戏列表";
-const char zh_SELECT_help[]="缩略图开关";
-const char zh_L_A_help[]="冷启动";
-const char zh_LSTART_help[]="删除文件";
-const char zh_online_manual[]="  在线说明书";
-
-const char zh_no_game_played[]="还没玩过游戏";
-
-const char zh_ingameRTC[]=" 游戏时钟";
-//const char zh_offRTC_powersave[]=" ";
-const char zh_ingameRTC_open[]="打开";
-const char zh_ingameRTC_close[]="关闭";//TURNOFF TO POWER SAVE
-
-const char zh_error_0[]="文件夹错误";
-const char zh_error_1[]="文件错误";
-const char zh_error_2[]="SAVER错误";
-const char zh_error_3[]="存档错误";
-const char zh_error_4[]="读取存档错误";
-const char zh_error_5[]="创建存档错误";
-const char zh_error_6[]="RTS文件错误";
-
-const char *zh_rom_menu[]={
-	"直接启动",
-	"启动带辅助",
-	"烧录到NOR",
-	"烧录到NOR带辅助",
-	"存档类型",
-	"金手指",
-};
-const char *zh_nor_op[3]={
-	"直接运行",
-	"删除",
-	"全部格式化",
-};
-
-
-
-//英文
+// english
 const char en_init_error[]="Micro SD card initial error";
 const char en_power_off[]="Power off";
 const char en_init_ok[]="Micro SD card initial OK";
@@ -253,85 +165,169 @@ const char *en_nor_op[3]={
 	"FORMAT ALL",
 };	
 
+
+// korean
+const char kr_init_error[]="Micro SD card 汲沥 俊矾";
+const char kr_power_off[]="傈盔阑 辆丰窍技夸.";
+const char kr_init_ok[]="Micro SD card 汲沥 己傍";
+const char kr_Loading[]="肺爹吝...";
+const char kr_file_overflow[]="颇老 坷滚敲肺快";
+
+const char kr_menu_btn[]="[B]秒家    [A]犬牢";
+const char kr_writing[]="历厘吝...";
+const char kr_lastest_game[]="SELECT THE LASTEST";
+
+const char kr_time[]="     矫埃";
+const char kr_Mon[]="岿";
+const char kr_Tues[]="拳";
+const char kr_Wed[]="荐";
+const char kr_Thur[]="格";
+const char kr_Fri[]="陛";
+const char kr_Sat[]="配";
+const char kr_Sun[]="老";
+
+const char kr_addon[]="    局靛柯";
+const char kr_reset[]="府悸";
+const char kr_rts[]="SAVESTATE";
+const char kr_sleep[]="浇赋";
+const char kr_cheat[]="摹飘";
+
+const char kr_hot_key[] ="浇赋 虐";
+const char kr_hot_key2[]=" 皋春 虐";
+
+const char kr_language[]=" 攫绢";
+const char kr_lang[]="茄惫绢";
+const char kr_set_btn[]="汲沥";
+const char kr_ok_btn[]=" 犬牢";
+
+const char kr_formatnor_info[]="SURE?about 4 mins";
+
+const char kr_check_sav[]="CHECKING SAV FILE";
+const char kr_make_sav[] ="CREATING SAV FILE";
+
+const char kr_check_RTS[]="CHECKING RTS FILE";
+const char kr_make_RTS[] ="CREATING RTS FILE";
+
+const char kr_check_pat[]="CHECKING PAT FILE";
+const char kr_make_pat[] ="CREATING PAT FILE";
+
+const char kr_loading_game[]="霸烙 肺爹吝";
+
+const char kr_engine[]="   浚柳";
+const char kr_use_engine[]="FAST PATCH ENGINE";
+
+const char kr_recently_play[]="弥辟 角青格废";
+
+const char kr_START_help[]="弥辟 角青格废 凯扁";
+const char kr_SELECT_help[]="芥匙老 傈券";
+const char kr_L_A_help[]="Multiboot";
+const char kr_LSTART_help[]="颇老 昏力";
+const char kr_online_manual[]="柯扼牢 概春倔";
+
+const char kr_no_game_played[]="弥辟 角青茄 郴开捞 绝嚼聪促";
+
+const char kr_ingameRTC[]=" GAME RTC";
+const char kr_ingameRTC_open[]="凯扁";
+const char kr_ingameRTC_close[]="摧扁";//TURNOFF TO POWER SAVE
+
+const char kr_error_0[]="Folder error";
+const char kr_error_1[]="File error";
+const char kr_error_2[]="SAVER error";
+const char kr_error_3[]="Save error";
+const char kr_error_4[]="Read save error";
+const char kr_error_5[]="Make save error";
+const char kr_error_6[]="RTS file error";
+
+const char *kr_rom_menu[] = {
+	"角青",
+	"BOOT WITH ADDON",
+	"WRITE TO NOR CLEAN",
+	"WRITE TO NOR ADDON",
+	"历厘 鸥涝",
+	"摹飘",
+};
+const char *kr_nor_op[3]={
+	"DIRECT BOOT",
+	"DELETE",
+	"FORMAT ALL",
+};	
+
 //---------------------------------------------------------------------------------
-void LoadChinese(void)
+void LoadKorean(void)
 {
-	gl_init_error = (char*)zh_init_error;
-	gl_power_off = (char*)zh_power_off;
-	gl_init_ok = (char*)zh_init_ok;
-	gl_Loading = (char*)zh_Loading;
-	gl_file_overflow = (char*)zh_file_overflow;
+	gl_init_error = (char*)kr_init_error;
+	gl_power_off = (char*)kr_power_off;
+	gl_init_ok = (char*)kr_init_ok;
+	gl_Loading = (char*)kr_Loading;
+	gl_file_overflow = (char*)kr_file_overflow;
 
-	gl_menu_btn = (char*)zh_menu_btn;
-	gl_writing = (char*)zh_writing;
-	gl_lastest_game = (char*)zh_lastest_game;
+	gl_menu_btn = (char*)kr_menu_btn;
+	gl_writing = (char*)kr_writing;
+	gl_lastest_game = (char*)kr_lastest_game;
 	
+	gl_time = (char*)kr_time;	
+	gl_Mon = (char*)kr_Mon;
+	gl_Tues = (char*)kr_Tues;
+	gl_Wed = (char*)kr_Wed;
+	gl_Thur = (char*)kr_Thur;
+	gl_Fri = (char*)kr_Fri;
+	gl_Sat = (char*)kr_Sat;
+	gl_Sun = (char*)kr_Sun;
+	gl_addon = (char*)kr_addon;
+	gl_reset = (char*)kr_reset;
+	gl_rts = (char*)kr_rts;
+	gl_sleep = (char*)kr_sleep;
+	gl_cheat = (char*)kr_cheat;	
 	
-	gl_time = (char*)zh_time;	
-	gl_Mon = (char*)zh_Mon;
-	gl_Tues = (char*)zh_Tues;
-	gl_Wed = (char*)zh_Wed;
-	gl_Thur = (char*)zh_Thur;
-	gl_Fri = (char*)zh_Fri;
-	gl_Sat = (char*)zh_Sat;
-	gl_Sun = (char*)zh_Sun;
-
-	gl_addon = (char*)zh_addon;
-	gl_reset = (char*)zh_reset;
-	gl_rts = (char*)zh_rts;
-	gl_sleep = (char*)zh_sleep;
-	gl_cheat = (char*)zh_cheat;	
+	gl_hot_key = (char*)kr_hot_key;
+	gl_hot_key2 = (char*)kr_hot_key2;
 	
-	gl_hot_key = (char*)zh_hot_key;
-	gl_hot_key2 = (char*)zh_hot_key2;
-
-	gl_language =  (char*)zh_language;
+	gl_language =  (char*)kr_language;
 	gl_en_lang = (char*)en_lang;
-	gl_zh_lang = (char*)zh_lang;;
-	gl_set_btn = (char*)zh_set_btn;
-	gl_ok_btn = (char*)zh_ok_btn;
-	gl_formatnor_info = (char*)zh_formatnor_info;
+	gl_kr_lang = (char*)kr_lang;;
+	gl_set_btn = (char*)kr_set_btn;
+	gl_ok_btn = (char*)kr_ok_btn;
+	gl_formatnor_info = (char*)kr_formatnor_info;
 
-	gl_check_sav = (char*)zh_check_sav;
-	gl_make_sav = (char*)zh_make_sav;
+	gl_check_sav = (char*)kr_check_sav;
+	gl_make_sav = (char*)kr_make_sav;
 		
-	gl_check_RTS = (char*)zh_check_RTS;
-	gl_make_RTS = (char*)zh_make_RTS;
+	gl_check_RTS = (char*)kr_check_RTS;
+	gl_make_RTS = (char*)kr_make_RTS;
 	
-	gl_check_pat = (char*)zh_check_pat;
-	gl_make_pat = (char*)zh_make_pat;
+	gl_check_pat = (char*)kr_check_pat;
+	gl_make_pat = (char*)kr_make_pat;
 	
-	gl_loading_game = (char*)zh_loading_game;
-	gl_engine = (char*)zh_engine;
-	gl_use_engine = (char*)zh_use_engine;
+	gl_loading_game = (char*)kr_loading_game;
 	
-	gl_recently_play = (char*)zh_recently_play;
-
-	gl_START_help = (char*)zh_START_help;
-	gl_SELECT_help = (char*)zh_SELECT_help;
-	gl_L_A_help = (char*)zh_L_A_help;
-	gl_LSTART_help = (char*)zh_LSTART_help;
-	gl_online_manual = (char*)zh_online_manual;
+	gl_engine = (char*)kr_engine;
+	gl_use_engine = (char*)kr_use_engine;
 	
-	gl_no_game_played = (char*)zh_no_game_played;
+	gl_recently_play = (char*)kr_recently_play;
 	
-	gl_ingameRTC = (char*)zh_ingameRTC;
-	//gl_offRTC_powersave = (char*)zh_offRTC_powersave;
-	gl_ingameRTC_open = (char*)zh_ingameRTC_open;
-	gl_ingameRTC_close = (char*)zh_ingameRTC_close;
+	gl_START_help = (char*)kr_START_help;
+	gl_SELECT_help = (char*)kr_SELECT_help;
+	gl_L_A_help = (char*)kr_L_A_help;
+	gl_LSTART_help = (char*)kr_LSTART_help;
+	gl_online_manual = (char*)kr_online_manual;
 	
-	gl_error_0 = (char*)zh_error_0;
-	gl_error_1 = (char*)zh_error_1;
-	gl_error_2 = (char*)zh_error_2;
-	gl_error_3 = (char*)zh_error_3;
-	gl_error_4 = (char*)zh_error_4;
-	gl_error_5 = (char*)zh_error_5;
-	gl_error_6 = (char*)zh_error_6;
+	gl_no_game_played = (char*)kr_no_game_played;
 	
+	gl_ingameRTC = (char*)kr_ingameRTC;
+	//gl_offRTC_powersave = (char*)kr_offRTC_powersave;
+	gl_ingameRTC_open = (char*)kr_ingameRTC_open;
+	gl_ingameRTC_close = (char*)kr_ingameRTC_close;
+	
+	gl_error_0 = (char*)kr_error_0;
+	gl_error_1 = (char*)kr_error_1;
+	gl_error_2 = (char*)kr_error_2;
+	gl_error_3 = (char*)kr_error_3;
+	gl_error_4 = (char*)kr_error_4;
+	gl_error_5 = (char*)kr_error_5;
+	gl_error_6 = (char*)kr_error_6;
 	//
-	gl_rom_menu = (char**)zh_rom_menu;
-	gl_nor_op = (char**)zh_nor_op;
-
+	gl_rom_menu = (char**)kr_rom_menu;
+	gl_nor_op = (char**)kr_nor_op;
 }
 //---------------------------------------------------------------------------------
 void LoadEnglish(void)
@@ -365,7 +361,7 @@ void LoadEnglish(void)
 	
 	gl_language =  (char*)en_language;
 	gl_en_lang = (char*)en_lang;
-	gl_zh_lang = (char*)zh_lang;;
+	gl_kr_lang = (char*)kr_lang;;
 	gl_set_btn = (char*)en_set_btn;
 	gl_ok_btn = (char*)en_ok_btn;
 	gl_formatnor_info = (char*)en_formatnor_info;
